@@ -1,7 +1,7 @@
 import streamlit as st
 import pint
 
-st.title("Unit Convert")
+st.title("Unit Converter")
 
 ureg = pint.UnitRegistry()
 
