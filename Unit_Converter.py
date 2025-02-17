@@ -51,14 +51,14 @@ with colU1:
 
 with colU2:
     inputUnitType = st.selectbox(
-        "",
+        "単位の種別",
         type.keys(),
         key="type"
     )
 
 with colU3:
     inputUnit = st.selectbox(
-        "",
+        "単位",
         type[inputUnitType].keys(),
         key="input"
     )
@@ -73,7 +73,7 @@ st.markdown("<h2 style='text-align: center;'>↓</h2>", unsafe_allow_html=True)
 colL1, colL2 = st.columns([3,1])
 with colL2:
     convertedUnit = st.selectbox(
-        "",
+        "単位",
         type[inputUnitType].keys(),
         key="output"
     )
