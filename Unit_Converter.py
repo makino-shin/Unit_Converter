@@ -4,7 +4,7 @@ import pint
 st.title("Unit Converter")
 
 ureg = pint.UnitRegistry()
-st.title("Unit Converter Study")
+ureg.load_definitions('unit_def.txt') # doctest: +SKIP
 
 inputQuantity = None
 convertedQuantity = None
@@ -22,6 +22,18 @@ length2Unit = {
     "mm^2":"millimeter_2",
     "cm^2":"centimeter_2",
     "m^2":"meter_2",
+}
+
+length3Unit = {
+    "mm^3":"millimeter_3",
+    "cm^3":"centimeter_3",
+    "m^3":"meter_3",
+}
+
+length4Unit = {
+    "mm^4":"millimeter_4",
+    "cm^4":"centimeter_4",
+    "m^4":"meter_4",
 }
 
 massUnit = {
@@ -47,6 +59,8 @@ timeUnit = {
 type = {
     "Length, 長さ":lengthUnit,
     "Length^2, 長さの2乗, 面積":length2Unit,
+    "Length^3, 長さの3乗, 体積":length3Unit,
+    "Length^4, 長さの4乗":length4Unit,
     "Mass, 質量":massUnit,
     "Time, 時間":timeUnit
 }
