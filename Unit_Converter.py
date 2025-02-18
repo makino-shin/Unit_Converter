@@ -66,7 +66,7 @@ type = {
 }
 
 
-colU1, colU2, colU3 = st.columns([2,1,1])
+colU1, colU2, colU3 = st.columns([2,2,1])
 
 with colU1:
     inputNum = st.number_input("換算する数値", value=10, step=None)
@@ -92,7 +92,7 @@ convertedQuantity = inputQuantity
 
 st.markdown("<h2 style='text-align: center;'>↓</h2>", unsafe_allow_html=True)
 
-colL1, colL2 = st.columns([3,1])
+colL1, colL2 = st.columns([4,1])
 with colL2:
     convertedUnit = st.selectbox(
         "単位",
