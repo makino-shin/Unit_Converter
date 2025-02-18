@@ -1,0 +1,13 @@
+millimeter_2 = millimeter**2
+centimeter_2 = centimeter**2
+meter_2 = meter**2
+
+millimeter_3 = millimeter**3
+centimeter_3 = centimeter**3
+meter_3 = meter**3
+
+millimeter_4 = millimeter**4
+centimeter_4 = centimeter**4
+meter_4 = meter**4
+
+

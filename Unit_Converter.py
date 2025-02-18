@@ -4,6 +4,7 @@ import pint
 st.title("Unit Converter")
 
 ureg = pint.UnitRegistry()
+st.title("Unit Converter Study")
 
 inputQuantity = None
 convertedQuantity = None
@@ -15,6 +16,12 @@ lengthUnit = {
     "cm":"centimeter",
     "m":"meter",
     "km":"kilometer"
+}
+
+length2Unit = {
+    "mm^2":"millimeter_2",
+    "cm^2":"centimeter_2",
+    "m^2":"meter_2",
 }
 
 massUnit = {
@@ -39,6 +46,7 @@ timeUnit = {
 #Type
 type = {
     "Length, 長さ":lengthUnit,
+    "Length^2, 長さの2乗, 面積":length2Unit,
     "Mass, 質量":massUnit,
     "Time, 時間":timeUnit
 }
